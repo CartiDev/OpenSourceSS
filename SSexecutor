@@ -1,5 +1,5 @@
--- Gui to Lua
--- Version: 3.2
+-- Owner of OpenSourceSS x1#0002
+-- Version 2
 
 -- Instances:
 
@@ -33,11 +33,11 @@ Frame.Parent = ScriptExecuter
 Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0.0140595287, 0, 0.670106173, 0)
+Frame.Position = UDim2.new(0.0174930058, 0, 0.652468264, 0)
 Frame.Selectable = true
 Frame.Size = UDim2.new(0, 392, 0, 200)
 Frame.Image = "rbxassetid://3570695787"
-Frame.ImageColor3 = Color3.fromRGB(141, 0, 2)
+Frame.ImageColor3 = Color3.fromRGB(5, 1, 62)
 Frame.ScaleType = Enum.ScaleType.Slice
 Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.120
@@ -159,7 +159,7 @@ CodeBar.Font = Enum.Font.SourceSansBold
 CodeBar.MultiLine = true
 CodeBar.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 CodeBar.PlaceholderText = "Code Here"
-CodeBar.Text = "Executer Made by Batman:)"
+CodeBar.Text = "SECURITY"
 CodeBar.TextColor3 = Color3.fromRGB(255, 255, 255)
 CodeBar.TextSize = 25.000
 CodeBar.TextWrapped = true
@@ -271,46 +271,54 @@ Fire_Roundify_12px_4.SliceScale = 0.120
 
 -- Scripts:
 
-local function PSLHJDT_fake_script() -- TextLabel_3.LocalScript 
+local function XGGXK_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	wait(2)
 	script.Parent.Text = '("'..game.Players.LocalPlayer.Name..'")'
 end
-coroutine.wrap(PSLHJDT_fake_script)()
-local function SVWI_fake_script() -- Frame.MainScript 
+coroutine.wrap(XGGXK_fake_script)()
+local function GMYKHLB_fake_script() -- Frame.MainScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 	
-	local code = "sayu&tYRghrFv56vYTf65gyugfy"
+	local code = "redux"
 	local Event = script.Parent.ExecuteEvent
 	local Bar = script.Parent.CodeBar
 	local function Execute(scriptt)
 		Event:FireServer(scriptt, code)
 	end
 	local Frame = script.Parent
-	script.Parent.Fire.MouseButton1Click:Connect(function()
-		Execute("require("..script.Parent.RequireID.Text..")"..script.Parent.FireSplit.Text.."('"..game.Players.LocalPlayer.Name.."')")
+			script.Parent.Fire.MouseButton1Click:Connect(function()
+				Execute("require("..script.Parent.RequireID.Text..")"..script.Parent.FireSplit.Text.."('"..game.Players.LocalPlayer.Name.."')")
 	end)
-	Frame.ExecuteMain.MouseButton1Click:Connect(function()
-		Execute(Frame.CodeBar.Text)
+			Frame.ExecuteMain.MouseButton1Click:Connect(function()
+			Execute(Frame.CodeBar.Text)
 	end)
-	Frame.Clear.MouseButton1Click:Connect(function()
-		Bar.Text = ""
+			Frame.Clear.MouseButton1Click:Connect(function()
+			Bar.Text = ""
 	end)
-	Frame.Respawn.MouseButton1Click:Connect(function()
-		Execute("game.Players."..game.Players.LocalPlayer.Name..":LoadCharacter()")
+			Frame.Respawn.MouseButton1Click:Connect(function()
+				Execute("game.Players."..game.Players.LocalPlayer.Name..":LoadCharacter()")
 	end)
 	
 	
 end
-coroutine.wrap(SVWI_fake_script)()
-local function MPAH_fake_script() -- ExecuteMain.LocalScript 
+coroutine.wrap(GMYKHLB_fake_script)()
+local function OXKJIM_fake_script() -- ExecuteMain.LocalScript 
 	local script = Instance.new('LocalScript', ExecuteMain)
 
-	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.CodeBar.Text)
 	end)
 end
-coroutine.wrap(MPAH_fake_script)()
+coroutine.wrap(OXKJIM_fake_script)()
+local function OUPE_fake_script() -- ExecuteMain.Script 
+	local script = Instance.new('Script', ExecuteMain)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(OUPE_fake_script)()
